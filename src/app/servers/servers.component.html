@@ -1,0 +1,4 @@
+<p *ngFor="let server of servers" [ngClass]="{'Online': serverStatus == 'Online'}"
+[ngStyle]="{'background-color': getColor() }">
+  {{server}} works!{{getColor()}}
+</p>
